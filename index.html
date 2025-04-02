@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Teacher Job Application</h2>
+        <form id="jobApplicationForm">
+            <label for="postApplied">Post Applied For:</label>
+            <input type="text" id="postApplied" name="postApplied" required>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fatherHusbandName">Father/Husband's Name:</label>
+            <input type="text" id="fatherHusbandName" name="fatherHusbandName" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="contact">Contact No.:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+            </select>
+
+            <label for="spouseName">Spouse Name:</label>
+            <input type="text" id="spouseName" name="spouseName">
+
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children">
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
