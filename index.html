@@ -3,59 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Job Application</title>
+    <title>Teacher Job Application Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Teacher Job Application</h2>
-        <form id="jobApplicationForm">
-            <label for="postApplied">Post Applied For:</label>
-            <input type="text" id="postApplied" name="postApplied" required>
+        <h2>TEACHER JOB APPLICATION FORM</h2>
+        <p>(Please fill in your own handwriting)</p>
+        <form>
+            <label>Post Applied For:</label>
+            <input type="text" name="post" class="full-width"><br><br>
+            
+            <label>Photo:</label>
+            <input type="file" name="photo"><br><br>
+            
+            <h3>2. GENERAL INFORMATION</h3>
+            <label>Name:</label>
+            <input type="text" name="name" class="full-width"><br><br>
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label>Father's/ Husband's Name:</label>
+            <input type="text" name="father_husband_name" class="full-width"><br><br>
 
-            <label for="fatherHusbandName">Father/Husband's Name:</label>
-            <input type="text" id="fatherHusbandName" name="fatherHusbandName" required>
+            <label>Address:</label>
+            <textarea name="address" class="full-width"></textarea><br><br>
 
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
+            <label>Contact No. (R):</label>
+            <input type="text" name="contact_r"> 
+            <label>Mobile (P):</label>
+            <input type="text" name="contact_p"><br><br>
 
-            <label for="contact">Contact No.:</label>
-            <input type="text" id="contact" name="contact" required>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+            <label>Email ID:</label>
+            <input type="email" name="email"><br><br>
 
-            <label for="mobile">Mobile No.:</label>
-            <input type="text" id="mobile" name="mobile" required>
+            <h3>3. Marital Status:</h3>
+            <input type="radio" name="marital_status" value="single"> Single
+            <input type="radio" name="marital_status" value="married"> Married <br><br>
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
+            <label>Spouse Name:</label>
+            <input type="text" name="spouse_name"> 
+            <label>Educational Qualification:</label>
+            <input type="text" name="spouse_qualification"><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label>Work Address:</label>
+            <textarea name="work_address" class="full-width"></textarea><br><br>
 
-            <label for="maritalStatus">Marital Status:</label>
-            <select id="maritalStatus" name="maritalStatus" required>
-                <option value="">Select</option>
-                <option value="Single">Single</option>
-                <option value="Married">Married</option>
-            </select>
+            <label>Phone:</label>
+            <input type="text" name="work_phone">
+            <label>Mobile:</label>
+            <input type="text" name="work_mobile"><br><br>
 
-            <label for="spouseName">Spouse Name:</label>
-            <input type="text" id="spouseName" name="spouseName">
+            <h3>4. Details Of Children</h3>
+            <label>No. Of Children:</label>
+            <input type="number" name="num_children">
+            <label>Son(s):</label>
+            <input type="number" name="sons">
+            <label>Age:</label>
+            <input type="text" name="sons_age"><br><br>
 
-            <label for="children">Number of Children:</label>
-            <input type="number" id="children" name="children">
+            <label>Daughter(s):</label>
+            <input type="number" name="daughters">
+            <label>Age:</label>
+            <input type="text" name="daughters_age"><br><br>
 
-            <label for="resume">Upload Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <label>School / College if studying:</label>
+            <input type="text" name="children_school" class="full-width"><br><br>
 
-            <label for="coverLetter">Cover Letter:</label>
-            <textarea id="coverLetter" name="coverLetter" required></textarea>
+            <h3>5. References</h3>
+            <label>Give two references of permanent residents of <city> and having their own house:</label>
+            <textarea name="references" class="full-width"></textarea><br><br>
 
-            <button type="submit">Submit Application</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
